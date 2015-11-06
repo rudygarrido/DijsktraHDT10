@@ -1,8 +1,8 @@
-Xelaju Guatemala 30
+Xelaju Mixco 30
 Xelaju Izabal 60
-Guatemala Izabal 35
-Guatemala Coban 23
+Mixco Izabal 35
+Mixco Coban 23
 Coban Flores 20
-Guatemala Flores 45
-Flores Sanarate 57
-Sanarate Guatemala 12
+Mixco Flores 45
+Flores Jalapa 57
+Jalapa Mixco 12
