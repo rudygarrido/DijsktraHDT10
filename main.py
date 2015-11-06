@@ -39,18 +39,24 @@ while 1:
     if opcion==2:
         ciudadInicial = raw_input('Ciudad inicial: ')
         ciudadFinal = raw_input('Ciudad final: ')
-        print 'Las ciudades por las que debe pasar son: '   
-        camino = nx.shortest_path(G, source=ciudadInicial, target=ciudadFinal)
-        print camino
-        peso = 0
-        posicion =0;
-        for x in range(0, len(camino)-1):
-            peso = peso + G[camino[x]][camino[x+1]]['weight']
-        print 'Con el peso'+peso
+        try:
+            camino = nx.shortest_path(G, source=ciudadInicial, target=ciudadFinal)
+            print 'Las ciudades por las que debe pasar son: '   
+            print camino
+            peso = 0
+            posicion =0;
+            for x in range(0, len(camino)-1):
+                peso = peso + G[camino[x]][camino[x+1]]['weight']
+            print 'Con el peso'+peso
+        except:
+            print 'No hay camino entre estas ciudades'
     if opcion ==3:
         ciudadInicial = raw_input('Ciudad inicial: ')
         ciudadFinal = raw_input('Ciudad final: ')
-        G.remove_edge(ciudadInicial, ciudadFinal)
+        try:
+            G.remove_edge(ciudadInicial, ciudadFinal)
+        except:
+             print 'No hay camino entre estas ciudades'   
     if opcion==4:
         ciudadInicial = raw_input('Ciudad inicial: ')
         ciudadFinal = raw_input('Ciudad final: ')
