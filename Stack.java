@@ -1,4 +1,10 @@
 /******************************************************************************
+ * Implementado por
+ *  	Rudy Garrido
+ *  	Delbert Custodio
+ *  
+ *  
+ *  
  *  Compilation:  javac Stack.java
  *  Execution:    java Stack < input.txt
  *

@@ -56,6 +56,12 @@ import java.util.Locale;
  *
  *  @author Robert Sedgewick
  *  @author Kevin Wayne
+ *  
+ *  
+ *  Implementado por
+ *  	Rudy Garrido
+ *  	Delbert Custodio
+ *  
  */
 public final class StdOut {
 

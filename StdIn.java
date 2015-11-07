@@ -186,6 +186,12 @@ import java.util.regex.Pattern;
  *  @author David Pritchard
  *  @author Robert Sedgewick
  *  @author Kevin Wayne
+ *  
+ *  
+ *  
+ *  Implementado por
+ *  	Rudy Garrido
+ *  	Delbert Custodio
  */
 public final class StdIn {
 

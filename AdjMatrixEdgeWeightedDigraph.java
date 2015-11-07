@@ -32,6 +32,11 @@ import java.util.NoSuchElementException;
  *
  *  @author Robert Sedgewick
  *  @author Kevin Wayne
+ *  
+ *  Implemetado por 
+ *  	Rudy Garrido, 14
+ *  	Delbert Custodio, 14246
+ *  
  */
 public class AdjMatrixEdgeWeightedDigraph {
     private static final String NEWLINE = System.getProperty("line.separator");

@@ -46,6 +46,10 @@ import java.util.NoSuchElementException;
  *
  *  @author Robert Sedgewick
  *  @author Kevin Wayne
+ *  
+ *  Implementado por
+ *  	Rudy Garrido
+ *  	Delbert Custodio
  *
  *  @param <Item> the generic type of an item in this bag
  */

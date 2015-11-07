@@ -36,6 +36,11 @@
  *
  *  @author Robert Sedgewick
  *  @author Kevin Wayne
+ *  
+ *  Implementado por
+ *  	Rudy Garrido
+ *  	Delbert Custodio
+ *  
  */
 public class FloydWarshall {
     private boolean hasNegativeCycle;  // is there a negative cycle?

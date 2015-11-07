@@ -35,6 +35,11 @@
  *
  *  @author Robert Sedgewick
  *  @author Kevin Wayne
+ *  
+ *  Implementado por
+ *  	Rudy Garrido
+ *  	Delbert Custodio
+ *  
  */
 public class EdgeWeightedDirectedCycle {
     private boolean[] marked;             // marked[v] = has vertex v been marked?
