@@ -159,6 +159,7 @@ public class Manejador{
 		System.out.println("final "+ciudades.indexOf(ciudadFinal));
 		g.deleteEdge(g.getEdge(ciudades.indexOf(ciudadInicio), ciudades.indexOf(ciudadFinal)));
 		spt = new FloydWarshall(g);
+		System.out.println("Se elimino conexion de "+ciudadInicio+" a "+ciudadFinal);
 	}
 	/**
 	 * @return matriz de adyacencia
@@ -201,6 +202,7 @@ public class Manejador{
 	public void crearConexion(String ciudadInicio, String ciudadFinal, int peso) {
 		g.addEdge(new DirectedEdge(ciudades.indexOf(ciudadInicio), ciudades.indexOf(ciudadFinal), peso));
 		spt = new FloydWarshall(g);
+		System.out.println("Se agrego conexion de "+ciudadInicio+" a "+ciudadFinal);
 	}
 	
 	

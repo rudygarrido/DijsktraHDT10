@@ -244,7 +244,7 @@ public class InterfazGrafica {
 					int returnVal = fc.showOpenDialog(frame);
 			        if (returnVal == JFileChooser.APPROVE_OPTION) {
 			        	System.out.println("Seleccion");
-			            file = fc.getSelectedFile();
+			        	file = fc.getSelectedFile();
 			            textField.setText(file.getAbsolutePath());
 			        } 
 				}else if(a.getSource()==buttonCalcular){
