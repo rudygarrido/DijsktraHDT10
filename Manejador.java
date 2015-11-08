@@ -44,6 +44,9 @@ public class Manejador{
 	AdjMatrixEdgeWeightedDigraph g = null;
 	public void readFile(String file) throws FileNotFoundException {
 
+		/*
+		 * Lectura de las lineas de texto
+		 * */
 		 BufferedReader br = new BufferedReader(new FileReader(file));
 	        String line = null;
 	        try {
@@ -114,6 +117,10 @@ public class Manejador{
 	            }
 	        }       
 	}
+	
+	/*
+	 * Se suman las distancias entre ciudades
+	 * */
 	public String obtenerDistancia(String ciudadInicio, String ciudadFinal){
 		if(ciudades.contains(ciudadInicio) && ciudades.contains(ciudadFinal)){
 			if(spt.hasPath(ciudades.indexOf(ciudadInicio), ciudades.indexOf(ciudadFinal))){
@@ -137,12 +144,25 @@ public class Manejador{
 			return null;
 		}
 	}
+	
+	
+	/**
+	 * 
+	 * Se elimina la conexion por medio de la eliminacion de la 
+	 * "edge" o arista que conecta los nodos
+	 * 
+	 * @param ciudadInicio
+	 * @param ciudadFinal
+	 */
 	public void eliminarConexion(String ciudadInicio, String ciudadFinal){
 		System.out.println("inicio "+ciudades.indexOf(ciudadInicio));
 		System.out.println("final "+ciudades.indexOf(ciudadFinal));
 		g.deleteEdge(g.getEdge(ciudades.indexOf(ciudadInicio), ciudades.indexOf(ciudadFinal)));
 		spt = new FloydWarshall(g);
 	}
+	/**
+	 * @return matriz de adyacencia
+	 */
 	public String obtenerMatriz() {
 		String matriz = "     ";
 		for(int v = 0; v < g.V(); v++){
@@ -171,10 +191,22 @@ public class Manejador{
 		}
 		return matriz;
 	}
+	/**
+	 * Crea una conexion entre nodos
+	 * 
+	 * @param ciudadInicio
+	 * @param ciudadFinal
+	 * @param peso: distancia entre nodos
+	 */
 	public void crearConexion(String ciudadInicio, String ciudadFinal, int peso) {
 		g.addEdge(new DirectedEdge(ciudades.indexOf(ciudadInicio), ciudades.indexOf(ciudadFinal), peso));
 		spt = new FloydWarshall(g);
 	}
+	
+	
+	/**
+	 * @return Centro del grafo
+	 */
 	public String calcularNodoCentral(){
 		double[] nodoCentral = {0,9999999};
 		for (int w = 0; w < g.V(); w++) {

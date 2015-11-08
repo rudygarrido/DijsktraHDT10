@@ -13,6 +13,7 @@ import java.awt.EventQueue;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JSlider;
 
@@ -66,6 +67,7 @@ public class InterfazGrafica {
 		private JButton btnNuevaConexion;
 		private JTextArea textArea_1;
 		private JButton btnSinConexion;
+		private JButton btnCentroDelGrafo;
 		private JLabel lblLaCiudadCentral;
 		public static void main(String[] args) {
 			EventQueue.invokeLater(new Runnable() {
@@ -210,6 +212,11 @@ public class InterfazGrafica {
 			lblMatrizDeAdyacencia.setBounds(299, 313, 205, 23);
 			frame.getContentPane().add(lblMatrizDeAdyacencia);
 			
+			btnCentroDelGrafo = new JButton("Centro del Grafo");
+			btnCentroDelGrafo.addActionListener(new Evento());
+			btnCentroDelGrafo.setBounds(69, 468, 134, 23);
+			frame.getContentPane().add(btnCentroDelGrafo);
+			
 			fc = new JFileChooser();
 			
 			
@@ -264,6 +271,9 @@ public class InterfazGrafica {
 				}else if(a.getSource()== btnNuevaConexion){
 					manejador.crearConexion(textField_3.getText(), textField_4.getText(), Integer.parseInt(textField_5.getText()));
 					textArea_1.setText(manejador.obtenerMatriz());
+				}
+				else if (a.getSource() ==btnCentroDelGrafo){
+					JOptionPane.showMessageDialog(frame,manejador.calcularNodoCentral());
 				}
 			}
 		}
