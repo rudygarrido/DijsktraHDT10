@@ -1,3 +1,17 @@
+"""
+    Universidad del Valle de Guatemala
+    Algoritmos y Estructuras de Datos
+    Seccion 10
+
+                                Hoja de Trabajo No 10
+
+    Rudy Garrido
+    Delbert Custodio
+    
+
+"""
+
+
 import networkx as nx
 G=nx.DiGraph()
 file = open('ciudades.txt', 'r')
