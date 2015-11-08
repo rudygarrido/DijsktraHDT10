@@ -99,6 +99,8 @@ while 1:
         except ValueError:
             print "Numero Invalida"
         G.add_edge(ciudadInicial,ciudadFinal, weight=peso)
+        
+    
     if opcion==5:
         break
 
