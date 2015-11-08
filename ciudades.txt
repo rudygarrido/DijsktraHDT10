@@ -6,3 +6,5 @@ Coban Flores 20
 Mixco Flores 45
 Flores Jalapa 57
 Jalapa Mixco 12
+Mixco Iztapa 100
+Guatemala Chimaltenango 20

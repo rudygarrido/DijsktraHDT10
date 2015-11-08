@@ -11,6 +11,16 @@ import java.util.Map.Entry;
 
 
 public class Manejador{
+	
+	/*
+	 * Instanciacion: se utilizo una ArrayList para guardar
+	 * la informacion necesario de las ciudades
+	 * 
+	 * --> Tambien la clase FloydMarshall proporcionada por 
+	 * Kevin Wayne, asi como las clases que se encargan de manejar los 
+	 * "edgeWeight" o pesos de las aristas del grafo.
+	 * */
+	
 	ArrayList<String> ciudades= new ArrayList<String>();
 	FloydWarshall spt=null;
 	public FloydWarshall getSpt() {

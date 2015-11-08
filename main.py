@@ -10,6 +10,7 @@ print 'Bienvenido al manejador de ciudades'
 
 
 while 1:
+    print ''
     print '1. Mostrar la matriz de adyacencia'
     print '2. Mostrar el camino entre ciudades'
     print '3. Eliminar el camino entre ciudades'
@@ -50,6 +51,8 @@ while 1:
             print 'Con el peso'+peso
         except:
             print 'No hay camino entre estas ciudades'
+            
+
     if opcion ==3:
         ciudadInicial = raw_input('Ciudad inicial: ')
         ciudadFinal = raw_input('Ciudad final: ')

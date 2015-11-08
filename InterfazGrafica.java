@@ -36,13 +36,16 @@ import javax.swing.JTextPane;
  * Por útltimo, tiene un área de texto en el cual muestra el resultado
  * de la operación.
  * 
- * @author André Rodas
- * @author Rudy Garrido 
- * @author Yosemite Meléndez
+ * @author Delbert Custodio
+ * @author Rudy Garrido
  *
  */
 public class InterfazGrafica {
-
+		
+		/*
+		 * Instanciacion de la interfaz
+		 * */
+		
 		private JFrame frame;
 		private JSlider slider;
 		private JLabel label;
@@ -217,12 +220,19 @@ public class InterfazGrafica {
 		 * Un evento en <btnSeleccionarArchivo> permite abrir el buscador de archivos
 		 * Un envento en <btnCalcular> permite realizar el cálculo de la operacion
 		 *
+		 *Este actionListener se basa en la clase manejador.
+		 *
 		 */
 		private class Evento implements ActionListener{
 
 
 			public void actionPerformed(ActionEvent a) {
-			
+				
+				
+				/*
+				 * Se utiliza un OpenDialog para poder buscar mas facil
+				 * el archivo .txt que se utilizara
+				 * */
 				if(a.getSource()==btnSeleccionarArchivo){
 					int returnVal = fc.showOpenDialog(frame);
 			        if (returnVal == JFileChooser.APPROVE_OPTION) {
