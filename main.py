@@ -57,11 +57,11 @@ while 1:
             print camino
             peso = 0
             posicion =0;
-            x =0
+            x = 0
             for x in range(0, len(camino)-1):
                 #G[x][y]['weight'] es el peso de la conexion o edge
                 peso = peso +  G[camino[x]][camino[x+1]]['weight']
-            print 'Con el peso '+peso
+            print 'Con el peso (distancia) de '+str(peso)
         except:
             print 'No hay camino entre estas ciudades'
             
